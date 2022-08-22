@@ -99,7 +99,7 @@ header img{
 
 .feedback{
     width: 90px;
-    padding: 7px;
+    padding: 5px;
     height: 7vh;
     border-radius: 4px;
     background-color:rgb(128,128,128,0.5);
@@ -112,7 +112,8 @@ header img{
 .feedback a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
+    padding: 10px;
 }
 
 /* --------------SearchBar---------------- */
@@ -263,11 +264,15 @@ header img{
 
  footer{
     background-color: #131418;
+   
     width: 100%;
     height: 84vh;
  }
  footer .container{
-  padding: 70px 60px;
+ 
+  padding-top: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
   display: flex;
   flex-wrap: wrap;
   color: white;
@@ -290,7 +295,53 @@ header img{
  footer  li a:hover{
     color: white;
  }
+ footer .social-icons svg:hover{
+    color: #337ab7;
+ }
+ footer .social-icons a{
+    text-decoration: none;
+    color: gray;
+ }
+ .footer-border{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 150px;
+    border-top: 1px solid gray;
+ }
+ .footer-second{
+    margin-left: 150px;
+    margin-top: 30px;
 
+ }
+ .footer-second img{
+    width: 130px;
+    height: 10vh;
+    margin-right: 150px;
+ }
+ .footer-second .book-online{
+    font-size: 17px;
+    color: white;
+    font-family: sans-serif;
+   
+    
+ }
+ .footer-second .right{
+    line-height: 25px;
+ }
+ .footer-second .call{
+    font-size: 19px;
+    color: gray;
+ }
+ footer .copyright{
+     color: grey;
+     margin-left: 150px;
+     font-size: 16px;
+ }
+ footer .copyright a{
+    text-decoration: none;
+    color: gray;
+    
+ }
 
 
 
