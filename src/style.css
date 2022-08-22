@@ -3,7 +3,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    
 }
 .top-first-row{
     background-color: black;
@@ -17,6 +17,7 @@
   justify-content: space-between;
   border-top: 2px solid darkgreen;
   border-bottom: 2px solid gray;
+  font-family: 'Playfair Display', serif;
 }
 #help-side{
     text-align: justify;
@@ -45,6 +46,9 @@ ul li span a:hover{
     flex-wrap: wrap;
    align-items: center;
     justify-content: space-between;
+    position:sticky;
+    top: 0;
+    z-index: 2;
 
 }
 .brand{
@@ -66,11 +70,6 @@ ul li span a:hover{
     color: white;
 }
      
-.brand sup{
-    font-size: 9px;
-    position: fixed;
-    top: 80px;
-}
 nav ul{
     display: flex;
     padding-right: 0px;
@@ -80,25 +79,138 @@ nav ul li{
 padding-left: 20px;
 font-size: 18px;
 } 
-.book-now img{
-    width: 110px;
-    height: 19vh;
-    position: fixed;
-    right: 0;
-    top: 50px;
-    z-index: 2;
-}
+
 header img{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     z-index: 0;
+}
+.carousel{
+    position: relative;
 } 
 .carousel-txt{
-    position: fixed;
-    top: 350px;
+   position: absolute;
+    top: 250px;
     left: 100px;
     color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
 }
+
+.feedback{
+    width: 90px;
+    padding: 7px;
+    height: 7vh;
+    border-radius: 4px;
+    background-color:rgb(128,128,128,0.5);
+    transform: rotate(90deg);
+    position: fixed;
+    top: 300px;
+    left: -30px;
+    
+}
+.feedback a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* --------------SearchBar---------------- */
+
+.search-bar{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 4px solid darkgreen;
+    text-align: center;
+}
+.search-bar div{
+    padding: 15px 0;
+    
+}
+.search-bar input{
+    border-bottom: 2px solid gray;
+    width: 400px;
+    height: 5vh;
+    border-radius: 2px;
+    position: relative;
+    padding-left: 10px;
+   
+    background-color: black;
+   
+
+}
+.search-bar svg:hover , .search-bar :hover::placeholder {
+   color: white;
+} 
+
+.search-bar svg{
+    transform: rotate(90deg);
+    position:absolute;
+    left: 790px;
+}  
+.search-bar span{
+    padding-left: 60px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+ /* ------------Gallery------ */
+
+ .gallery{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    padding: 40px 40px;
+ }
+ .gallery a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    
+    
+ }
+ 
+ .gallery .left-img img{
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+    flex-basis: 0 100%;
+ }
+ .gallery .right-img img{
+    width: 100%;
+    height: 50vh;
+    flex-basis: 0 100%;
+ }
+ .right-img:nth-child(2) {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 40px;
+ }
+ 
+ /* Search By Experience */
+
+ .rooms-img{
+    padding-top: 20vh;
+ }
+
+.rooms-img h2{
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
